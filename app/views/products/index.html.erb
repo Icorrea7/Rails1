@@ -1,0 +1,21 @@
+<div class= "container">
+<h1>Productos</h1>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripsion</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <% @products.each do |prod| %>
+    <tbody>
+      <tr>
+        <td><%=prod.name%></td>
+        <td><%=prod.description%></td>
+        <td><%=prod.price%></td>
+      </tr>
+    </tbody>
+    <%end%>
+  </table>
+</div>

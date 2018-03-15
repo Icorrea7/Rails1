@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'articles/index'
+
+  get 'users/index'
+
+  get 'products/index'
+
   get 'page' => 'page#home'
   get 'page/index'
   get 'page/show'
